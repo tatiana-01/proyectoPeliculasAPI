@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Sitio de peliculas</title>
+</head>
+<body>
+
+	<nav>
+		<div class="logo">
+			<h1>Peliculas</h1>
+		</div>
+		<div class="generoS">
+			<label for="genero">Genero</label>
+			<select class="selectGenero" id="genero">
+		
+			</select>
+		</div>
+		<div class="generoS">
+			<label for="popularidad">Popularidad</label>
+			<input type="number" id="numPopular" class="filtroPopularidad">
+		</div>
+					
+	</nav>
+
+	<div class="contenedor" id="contenedor"></div>
+
+	<div class="paginacion">
+		<button id="btnAnterior">Anterior</button>
+		<button id="btnSiguiente">Siguiente</button>
+		<span id="numPag"></span>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>

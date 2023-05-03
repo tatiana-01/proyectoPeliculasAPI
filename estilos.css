@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
+}
+
+#numPag{
+	color: white;
+	display: flex;
+	align-items: center;
+}
+#numPag::before{
+	content: 'Pagina';
+	margin-right: 0.4rem;
+}
+
+#contenedor{
+ display: grid;
+ gap:2rem;
+ grid-auto-flow: dense;
+ grid-auto-rows: auto;
+ grid-template-columns: repeat(auto-fill, minmax(12rem,1fr));
+}
+
+nav{
+	height: 5rem;
+	background-color: #241744;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
+	color:white;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.selectGenero{
+	height: 2rem;
+	width: auto;
+	border-radius: 20px;
+	background-color: lavender;
+}
+
+.generoS{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:10px;
+}
+
+.filtroPopularidad{
+	height: 2rem;
+	border-radius: 20px;
+	padding: 10px;
+	text-align: end;
+	width: 7rem;
+}
+
